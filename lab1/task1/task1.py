@@ -14,9 +14,6 @@ print(f"Tokenizer loaded with vocabulary size: {len(tokenizer)}")
 print(f"Model loaded successfully with {sum(p.numel() for p in model.parameters())} parameters")
 
 
-# Only resource available while solving:
-# https://numpy.org/doc/2.1/index.html
-
 def get_embedding(text, tokenizer, model):
     ...
     return embedding.cpu().numpy()
